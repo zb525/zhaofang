@@ -17,16 +17,13 @@ body {
 }
 header {
   width: 100%;
-  height: 0.8rem;
+  height: .42rem;
   background-color: #ff8a00;
   display: flex;
-  justify-content: center;
-  align-items: center;
   div:nth-child(1) {
     flex: 4;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: .35rem;
   }
   div:nth-child(2) {
     flex: 1;
@@ -56,7 +53,7 @@ main {
       width: 100%;
     }
   }
-  .xte {
+  .top {
     width: 100%;
     height: auto;
     .text {
@@ -76,8 +73,8 @@ main {
         color: #b0b0b0;
         line-height: 0.4rem;
       }
-      .sp {
-        margin: 0.2rem 0;
+      .school_home {
+        margin: 0.18rem 0;
         width: 100%;
         height: auto;
         span {
@@ -93,12 +90,12 @@ main {
       }
     }
   }
-  .hu {
+  .home{
     margin-top: 0.1rem;
     width: 100%;
     background-color: #ffffff;
     border: solid 0.01rem #e5e5e5;
-    .gg {
+    .type_ {
       width: 85%;
       margin: 0 auto;
       ul {
@@ -114,28 +111,13 @@ main {
         }
       }
     }
-    .gg1 {
-      width: 100%;
-      margin: 0 0.2rem;
-      ul {
-        width: 100%;
-        text-align: center;
-        border-bottom: solid 0.01rem #e5e5e5;
-        li {
-          list-style: none;
-          font-size: 0.12rem;
-          margin: 0.2rem 0;
-          color: #999999;
-        }
-      }
-    }
   }
-  .ts {
+  .rent {
     width: 100%;
     margin-top: 0.1rem;
     border: solid 0.01rem #e5e5e5;
     background-color: #ffffff;
-    .ts1 {
+    .rent_box {
       width: 85%;
       margin: 0 auto;
       border-bottom: solid 0.01rem #e5e5e5;
@@ -150,7 +132,7 @@ main {
         padding-bottom: 0.2rem;
         border-bottom: solid 0.01rem #e5e5e5;
       }
-      .gg1 {
+      .type_one {
         width: 100%;
         margin: 0 0.2rem;
         ul {
@@ -167,20 +149,21 @@ main {
       }
     }
   }
-  .im {
+  .house_type {
     width: 100%;
     margin-top: 0.1rem;
     border: solid 0.01rem #e5e5e5;
     background-color: #ffffff;
-    .im1 {
+    .house_type_box {
       width: 85%;
       margin: 0 auto;
       border-bottom: solid 0.01rem #e5e5e5;
       h4 {
         color: #ff9326;
-        margin: 0.1rem 0;
+        padding: 0.1rem 0;
+        border-bottom: solid .01rem #e5e5e5;
       }
-      .imgs_ {
+      .imgs_one {
         width: 100%;
         padding: 0.2rem 0;
         display: flex;
@@ -229,54 +212,9 @@ main {
           }
         }
       }
-      .imgs_1 {
-        width: 100%;
-        padding: 0.2rem 0;
-        display: flex;
-        .img {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img {
-            padding: 0.1rem;
-            width: 100%;
-          }
-        }
-        ul {
-          flex: 2;
-          padding-left: 0.1rem;
-          box-sizing: border-box;
-          flex-direction: column;
-          li {
-            list-style: none;
-            line-height: 0.25rem;
-          }
-          li:nth-child(1) {
-            font-size: 0.16rem;
-            margin-top: 0.1rem;
-          }
-          li:nth-child(2) {
-            font-size: 0.11rem;
-            margin-top: 0.1rem;
-          }
-
-          li:nth-child(3) {
-            font-size: 0.11rem;
-            span {
-              color: #849aae;
-              padding: 0.05rem;
-              font-size: 0.12rem;
-              display: inline-flex;
-              justify-content: center;
-              align-items: center;
-              background-color: #f4f7f9;
-              margin-right: 0.1rem;
-              margin-top: 0.1rem;
-            }
-          }
-        }
-      }
+     .imgs_two{
+       border-bottom: none;
+     }
     }
   }
   .school {
@@ -284,14 +222,14 @@ main {
     margin-top: 0.1rem;
     border: solid 0.01rem #e5e5e5;
     background-color: #ffffff;
-    .school1 {
+    .school-box {
       width: 85%;
       margin: 0 auto;
       border-bottom: solid 0.01rem #e5e5e5;
       h4 {
         margin: 0.1rem 0;
       }
-      .gg {
+      .type_ {
         width: 85%;
         margin: 0 auto;
         ul {
@@ -311,7 +249,7 @@ main {
         }
       }
 
-      .gg1 {
+      .type_one {
         width: 100%;
         margin: 0 0.2rem;
         ul {
@@ -402,21 +340,14 @@ main {
     }
   }
   .recommend {
-    width: 100%;
-    margin-top: 0.1rem;
-    border: solid 0.01rem #e5e5e5;
-    background-color: #ffffff;
-    .recommend1 {
-      width: 85%;
-      margin: 0 auto;
+    .recommend-box {
       border-bottom: solid 0.01rem #e5e5e5;
       h4 {
         border-bottom: solid 0.01rem #e5e5e5;
         padding: 0.1rem 0;
       }
-      .wh {
+      .wh_all {
         padding-top: 0.24rem;
-
         overflow: hidden;
         display: flex;
         .left {
@@ -427,18 +358,14 @@ main {
         .right {
             float: left;
             margin-left: 0.2rem;
-            overflow: hidden;
-            height: auto;
             p {
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 font-size: 0.18rem;
-                float: left;
-                display: block;
-                width: 100%;
+                border-bottom: none;
             }
-            .left1 {
+            .left_one {
                 float: left;
                 display: flex;
                 flex-direction: column;
@@ -469,7 +396,7 @@ main {
                     }
                 }
             }
-            .right1 {
+            .right_one {
                 float: right;
                 overflow: hidden;
                 margin-top: 0.1rem;
@@ -517,21 +444,6 @@ main {
             left: 0.1rem;
           }
         }
-}
-    .gg1 {
-      width: 100%;
-      margin: 0 0.2rem;
-      ul {
-        width: 100%;
-        text-align: center;
-        border-bottom: solid 0.01rem #e5e5e5;
-        li {
-          list-style: none;
-          font-size: 0.12rem;
-          margin: 0.2rem 0;
-          color: #999999;
-        }
-      }
     }
   }
 }

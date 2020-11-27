@@ -151,24 +151,24 @@ main .shop {
 main .shop .content {
   margin: 0 0.2rem;
 }
-main .shop .content .wh {
+main .shop .content .wh_all {
   padding: 0.24rem 0;
   border-bottom: 0.01rem solid #ff0000;
   overflow: hidden;
   display: flex;
 }
-main .shop .content .wh .left {
+main .shop .content .wh_all .left {
   padding: 0.1rem;
   box-sizing: border-box;
   float: left;
 }
-main .shop .content .wh .right {
+main .shop .content .wh_all .right {
   float: left;
   margin-left: 0.2rem;
   overflow: hidden;
   height: auto;
 }
-main .shop .content .wh .right p {
+main .shop .content .wh_all .right p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -177,29 +177,29 @@ main .shop .content .wh .right p {
   display: block;
   width: 100%;
 }
-main .shop .content .wh .right .left1 {
+main .shop .content .wh_all .right .left1 {
   float: left;
   display: flex;
   flex-direction: column;
 }
-main .shop .content .wh .right .left1 li {
+main .shop .content .wh_all .right .left1 li {
   list-style: none;
 }
-main .shop .content .wh .right .left1 li:nth-child(1) {
+main .shop .content .wh_all .right .left1 li:nth-child(1) {
   font-size: 0.12rem;
   margin-top: 0.1rem;
 }
-main .shop .content .wh .right .left1 li:nth-child(2) {
+main .shop .content .wh_all .right .left1 li:nth-child(2) {
   font-size: 0.12rem;
   margin-top: 0.15rem;
 }
-main .shop .content .wh .right .left1 li:nth-child(3) {
+main .shop .content .wh_all .right .left1 li:nth-child(3) {
   margin-top: 0.1rem;
   font-size: 0.12rem;
   flex-direction: row;
   display: flex;
 }
-main .shop .content .wh .right .left1 li:nth-child(3) span {
+main .shop .content .wh_all .right .left1 li:nth-child(3) span {
   width: 0.44rem;
   height: 0.2rem;
   display: block;
@@ -209,102 +209,28 @@ main .shop .content .wh .right .left1 li:nth-child(3) span {
   text-align: center;
   line-height: 0.2rem;
 }
-main .shop .content .wh .right .right1 {
+main .shop .content .wh_all .right .right1 {
   float: right;
   overflow: hidden;
   margin-top: 0.1rem;
 }
-main .shop .content .wh .right .right1 li {
+main .shop .content .wh_all .right .right1 li {
   list-style: none;
 }
-main .shop .content .wh .right .right1 li:nth-child(1) {
+main .shop .content .wh_all .right .right1 li:nth-child(1) {
   font-size: 0.12rem;
   color: coral;
   padding-right: 0;
 }
-main .shop .content .wh .right .right1 li:nth-child(2) {
+main .shop .content .wh_all .right .right1 li:nth-child(2) {
   font-size: 0.12rem;
   padding-right: 0;
   margin-top: 0.1rem;
   color: #999999;
   float: right;
 }
-main .shop .content .wh1 {
-  padding: 0.24rem 0;
-  overflow: hidden;
-  display: flex;
-}
-main .shop .content .wh1 .left {
-  padding: 0.1rem;
-  box-sizing: border-box;
-  float: left;
-}
-main .shop .content .wh1 .right {
-  float: left;
-  margin-left: 0.2rem;
-  overflow: hidden;
-  height: auto;
-}
-main .shop .content .wh1 .right p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 0.18rem;
-  float: left;
-  display: block;
-  width: 100%;
-}
-main .shop .content .wh1 .right .left1 {
-  float: left;
-  display: flex;
-  flex-direction: column;
-}
-main .shop .content .wh1 .right .left1 li {
-  list-style: none;
-}
-main .shop .content .wh1 .right .left1 li:nth-child(1) {
-  font-size: 0.12rem;
-  margin-top: 0.1rem;
-}
-main .shop .content .wh1 .right .left1 li:nth-child(2) {
-  font-size: 0.12rem;
-  margin-top: 0.15rem;
-}
-main .shop .content .wh1 .right .left1 li:nth-child(3) {
-  margin-top: 0.1rem;
-  font-size: 0.12rem;
-  flex-direction: row;
-  display: flex;
-}
-main .shop .content .wh1 .right .left1 li:nth-child(3) span {
-  width: 0.44rem;
-  height: 0.2rem;
-  display: block;
-  margin-right: 0.1rem;
-  background-color: #f4f7f9;
-  color: #849aae;
-  text-align: center;
-  line-height: 0.2rem;
-}
-main .shop .content .wh1 .right .right1 {
-  float: right;
-  overflow: hidden;
-  margin-top: 0.1rem;
-}
-main .shop .content .wh1 .right .right1 li {
-  list-style: none;
-}
-main .shop .content .wh1 .right .right1 li:nth-child(1) {
-  font-size: 0.12rem;
-  color: coral;
-  padding-right: 0;
-}
-main .shop .content .wh1 .right .right1 li:nth-child(2) {
-  font-size: 0.12rem;
-  padding-right: 0;
-  margin-top: 0.1rem;
-  color: #999999;
-  float: right;
+main .shop .content .wh_all_one {
+  border-bottom: none;
 }
 main .hot {
   width: 100%;

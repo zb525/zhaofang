@@ -10,78 +10,77 @@
 </head>
 
 <body>
-
+<div class="wrap">
     <header>
         <div><img src="./image/index/logo.jpg" alt=""></div>
         <div><img src="./image/index/xiazai.jpg" alt=""></div>
         <div><img src="./image/index/my.jpg" alt=""></div>
     </header>
-    <main>
-        <div class="inp">
-            <div class="in">
+    <main class="clearfix">
+        <div class="input_ clearfix">
+            <div class="input_box">
                 <input type="text" value="请输入小区名或商圈名称"><span>|</span>
-
             </div>
         </div>
-        <ul class="price clearfix">
+        <ul class="warp">
             <li class="li_">
-                <a>区域<div class="span"></div><div class="i"></div></a>
-                <div class="ab">
+                <div class="area">区域<div class="span"></div><div class="i"></div></div>
+                <div class="box">
                     <div class="left">
                         <p>区域</p>
                         <span>地铁</span>
                     </div>
                     <ul class="con">
-                        <li>附近</li>
-                        <li>不限</li>
-                        <li>朝阳</li>
-                        <li>海淀</li>
-                        <li>昌平</li>
-                        <li>丰台</li>
-                        <li>石景山</li>
+                        <li><a href="">附近</a></li>
+                        <li><a href="">不限</a></li>
+                        <li><a href="">朝阳</a></li>
+                        <li><a href="">海淀</a></li>
+                        <li><a href="">昌平</a></li>
+                        <li><a href="">丰台</a></li>
+                        <li><a href="">石景山</a></li>
                     </ul>
                     <ul class="right">
-                        <li>不限</li>
-                        <li>石贞</li>
-                        <li>奥林匹克公园</li>
-                        <li>百子湾</li>
-                        <li>北工大</li>
-                        <li>北苑</li>
-                        <li>CBD</li>
+                        <li><a href="">不限</a></li>
+                        <li><a href="">石贞</a></li>
+                        <li><a href="">奥林匹克公园</a></li>
+                        <li><a href="">百子湾</a></li>
+                        <li><a href="">北工大</a></li>
+                        <li><a href="">北苑</a></li>
+                        <li><a href="">CBD</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="li_1">
-                <a >价格<div class="span"></div><div class="i"></div></a>
-                <ul class="ab1">
+            <li class="li_">
+                <div class="area">价格<div class="span"></div><div class="i"></div></div>
+                <ul class="box box1">
                     <div class="all">
-                        <li>不限</li>
-                        <li>100万以下</li>
-                        <li>100万-150万</li>
-                        <li>150万-200万</li>
-                        <li>200万-250万</li>
-                        <li>250万-300万</li>
-                        <li>自定义价格</li>
+                        <li><span>不限</span> </li>
+                        <li><span>100万以下</span> </li>
+                        <li><span>100万-150万</span></li>
+                        <li><span>150万-200万</span></li>
+                        <li><span>200万-250万</span></li>
+                        <li><span>250万-300万</span></li>
+                        <li><span>自定义价格</span></li>
                     </div>
                 </ul>
             </li>
-            <li class="li_2">
-                <a>房型<div class="span"></div><div class="i"></div></a>
-                <ul class="ab2">
+            <li class="li_">
+                <div class="area">房型<div class="span"></div><div class="i"></div></div>
+                <ul class="box box2">
                     <div class="all">
-                        <li><span>不限</span>  </li>
+                        <li><span>不限</span></li>
                         <li><span>1室</span><input type="checkbox"></li>
                         <li><span>2室</span><input type="checkbox"></li>
                         <li><span>3室</span><input type="checkbox"></li>
                         <li><span>4室</span><input type="checkbox"></li>
                         <li><span>5室</span><input type="checkbox"></li>
-                        <li>确定</li>
+                        <li class="sure">确定</li>
                     </div>
                 </ul>
             </li>
-            <li class="li_3">
-                <a>更多<div class="span"></div><div class="i"></div></a>
-                <ul class="ab3">
+            <li class="li_">
+                <div class="area">更多<div class="span"></div><div class="i"></div></div>
+                <ul class="box box3">
                     <div class="all">
                         <h4>区域</h4>
                         <ul>
@@ -91,7 +90,7 @@
                             <li>西</li>
                             <li>北</li>
                         </ul>
-                        <h4>面积 （平方）</h4>
+                        <h4>面积（平方）</h4>
                         <ul>
                            <li>50以下</li>
                            <li>50-70</li>
@@ -138,7 +137,6 @@
                             <li>签约价格：13244元/平 <span>1105万</span></li>
                             <li>签约日期：2015年11月10日</li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="wh">
@@ -152,7 +150,6 @@
                             <li>签约价格：13244元/平<span>905万</span></li>
                             <li>签约日期：2015年11月10日</li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="wh">
@@ -195,53 +192,40 @@
         <p>北京找房无忧房地产经纪公司</p>
         <p>网络经营许可证京ICP备20160812号</p>
     </div>
+    <div class="masking"></div>
+</div>
 </body>
 <script src="./js/jquery-3.5.1.js"></script>
 <script>
     $('.li_').on('touchstart',function(){
+        $(this).find('.box').show();
+        $(this).siblings().find('.box').hide();
+        $(this).find('.span').hide();
+        $(this).find('.i').show();
+        $(this).siblings().find('.span').show();
+        $(this).siblings().find('.i').hide();
+        $(this).siblings().find('.area').css('color','#cccccc');
+        $(this).find('.area').css('color','#ff8a00');
+        $('.masking').show()
+    })
+    $('.box').find('span').on('click',function(){
+        $('.box').hide()
+        $('.li_').find('.span').show()
+        $('.li_').find('.i').hide()
+        $('.masking').hide()
+        $('.li_').find('.area').css('color','#cccccc');
         
-        // $('.li_').find('.ab').css('display','none')
-        // $(this).find('.ab').css('display','block')
-        $('.ab').toggle(function(){
-        // $('.li_').find('.span').toggleClass('.i')
-        $('.li_').find('.span').removeClass()
-        $('.li_').find('.i').show()
-        // $('.li_').find('.i').hide()
-            // $('.li_').find('.span').show()
-        })
-        // $('.li_>.i').toggleClass()
-        $('.li_>a>div:first').toggleClass('.span')
-            console.log($('.li_>a'))
-        // $('li_').find('.i').removeClass()
-        // $('li_').find('.span').show()
-
-    $('.con').on('touchstart',function(){
-        // $('li_').find('.span').show()
-        $('.li_').find('.i').removeClass()
-        $('.li_a>div:first').show()
     })
+    $('.box').find('.sure').on('click',function(){
+        $('.li_').find('.area').css('color','#cccccc');
+        $('.li_').find('.span').show()
+        $('.li_').find('.i').hide()
+        $(this).parents('.box').hide()
+        $('.masking').hide()
     })
-    $('.li_1').on('touchstart',function(){
-        $('.ab1').toggle()
-        $('.li_1').find('.span').removeClass('span')
-        $('.li_1').find('.i').show()
+    $('.li_').find('a').on('touchstart',function(){
+        $(this).css('color','#ff8a00')
     })
-    $('.li_2').on('cltouchstartick',function(){
-        $('.ab2').toggle()
-        $('.li_2').find('.span').removeClass('span')
-        $('.li_2').addClass('.i').show()
-    })
-    $('.li_3').on('touchstart',function(){
-        $('.ab3').toggle()
-        $('.li_3').find('.span').removeClass('span')
-        $('.li_3').find('.i').show()
-    })
-
-    
-
-
-
-
     function setRem() {
         var windw = document.documentElement.clientWidth || document.body.clientWidth;
         var uiw = 375;
